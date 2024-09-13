@@ -52,8 +52,6 @@ multi_sgd= MultiOutputRegressor(sgd)
 multi_sgd.fit(X_train_scaled,y_train_scaled)
 
 predictions=multi_sgd.predict(X_test_scaled)
-mse1=mean_squared_error(y_test_scaled,predictions)
-
 y_pred_actual=ss.inverse_transform(predictions)
 mse = mean_squared_error(y_test,y_pred_actual)
 print("Mean Squared Error:",mse)
@@ -71,8 +69,10 @@ plt.show()
 ```
 
 ## Output:
-![multivariate linear regression model for predicting the price of the house and number of occupants in the house](sam.png)
+![image](https://github.com/user-attachments/assets/48998039-c12b-446d-bc0a-5f6ea927979f)
 
+![image](https://github.com/user-attachments/assets/0b3cc6c9-46bd-488c-996f-797e6450d849)
 
+![image](https://github.com/user-attachments/assets/d0b46e52-e491-4bf0-988e-b95eb322258d)
 ## Result:
 Thus the program to implement the multivariate linear regression model for predicting the price of the house and number of occupants in the house with SGD regressor is written and verified using python programming.
